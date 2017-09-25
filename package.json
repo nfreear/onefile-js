@@ -1,10 +1,11 @@
 {
-  "name": "onefile",
+  "name": "otu",
+  "x-name": "onefile",
   "description": "One-file npm-package Javascripts. Inspired by php-melody — 'One-file composer scripts'.",
   "version": "1.0.0-beta",
   "license": "MIT",
   "bin": {
-    "onefile": "bin/onefile.js"
+    "otu": "bin/otu.js"
   },
   "preferGlobal": true,
   "author": "Nick Freear {@nfreear}",
@@ -19,11 +20,11 @@
     "semistandard": "^11.0.0"
   },
   "scripts": {
-    "onefile": "bin/onefile.js run examples/shelljs-ex.js",
+    "otu": "bin/otu.js run examples/shelljs-ex.js",
     "semi": "semistandard",
-    "test": "semistandard && bin/onefile.js example"
+    "test": "semistandard && bin/otu.js example"
   },
-  "keywords": [ "melody-php", "npm-package", "es6", "espree", "cli" ],
+  "keywords": [ "melody-php", "npm-package", "es6", "espree", "cli", "one-file" ],
   "x-melody-url": "http://melody.sensiolabs.org/",
   "x-copyright": "© Nick Freear, 20-Sep-2017."
 }

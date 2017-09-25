@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /*!
-  onefile commandline script (CLI).
+  otu (one-file) commandline script (CLI).
 
   Usage:
 
-      $ onefile run path/to/script.js
+      $ otu run path/to/script.js
 
   © Nick Freear, 20-Sep-2017 | License: MIT.
 */
@@ -23,7 +23,7 @@ if (ARGV.length === 4) {
 } else if (ARGV.length === 3 && ARGV[ 2 ] === 'example') {
   filename = EXAMPLE_JS;
 } else {
-  shell.log('Usage:\n\n  onefile run path/to/script.js');
+  shell.log('Usage:\n\n  otu run path/to/script.js');
   process.exit(1);
 }
 

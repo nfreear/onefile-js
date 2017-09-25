@@ -4,7 +4,7 @@
   https://npmjs.com/package/shelljs
 */
 
-const DIR = '~/.onefile-js/'; // Was: '~/.melodylike/';
+const DIR = '~/.otu-js/'; // Was: '~/.onefile-js/';
 const sh = require('shelljs');
 const log = console.warn;
 

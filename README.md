@@ -4,9 +4,11 @@
 [![onefile on Npmjs][npm-icon]][npm]
 [![License][license-icon]][mit]
 
-# nfreear / onefile-js
+# nfreear / otu-js
 
 One-file npm-package Javascripts.
+
+_"otu" === "one" ([Igbo][])_
 
 _Inspired by [php-melody][] — 'One-file composer scripts'."_
 
@@ -43,9 +45,9 @@ The above file can be executed like so
 (`npm install` & `node script.js` are run internally):
 
 ```sh
-npm install -g
+npm install otu -g
 
-onefile run examples/shelljs-ex.js
+otu run examples/shelljs-ex.js
 ```
 
 Note, the file is valid Javascript (`ES6`):
@@ -68,6 +70,8 @@ License: [MIT][].
 Twitter: [@nfreear][].
 
 
+[igbo]: https://en.wikipedia.org/wiki/Igbo_language
+    "Igbo ... is the language of the Igbo people ... of southeastern Nigeria (Wikipedia)"
 [php-melody]: http://melody.sensiolabs.org/ "Melody by SensioLabs - 'One-file composer scripts'"
 [es6]: http://exploringjs.com/es6/ch_template-literals.html#sec_introduction-template-literals
     "ES6 Template literal"
@@ -86,9 +90,9 @@ Twitter: [@nfreear][].
 [semi]: https://github.com/Flet/semistandard
 [semi-icon]: https://img.shields.io/badge/code_style-semistandard-brightgreen.svg?style=flat-square
     "Javascript coding style — 'semistandard'"
-[npm]: https://npmjs.com/package/onefile
-[npm-icon]: https://img.shields.io/npm/v/onefile.svg
-[license-icon]: https://img.shields.io/npm/l/onefile.svg
+[npm]: https://npmjs.com/package/otu
+[npm-icon]: https://img.shields.io/npm/v/otu.svg
+[license-icon]: https://img.shields.io/npm/l/otu.svg
 
 [es6-3]: http://jaspervalero.com/an-intro-to-the-delightful-javascript-es6-string-templates/
 [hered-1]: https://stackoverflow.com/questions/4376431/javascript-heredoc
