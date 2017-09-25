@@ -1,0 +1,6 @@
+
+examples/*
+!examples/shell*
+node_modules/
+package-lock.json
+*BAK*

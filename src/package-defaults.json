@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "package-defaults",
+  "description": "...",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "dependencies": { }
+}

@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "4"
+  #- "6"
+
+git:
+  depth: 8
+
+install:
+  - npm install
+
+script:
+  - npm test
+
+after_script:
+  - ls -alh ~/.nellie/
+
+# End.

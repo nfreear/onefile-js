@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "onefile",
+  "description": "One-file npm-package Javascripts. Inspired by php-melody ~ 'One-file composer scripts'.",
+  "x-melody-url": "http://melody.sensiolabs.org/",
+  "version": "1.0.0-alpha",
+  "license": "UNLICENSED",
+  "x-copyright": "© Nick Freear, 20-Sep-2017.",
+  "bin": {
+    "onefile": "bin/cli.js"
+  },
+  "author": "Nick Freear {@nfreear}",
+  "repository": "https://github.com/nfreear/onefile-js",
+  "dependencies": {
+    "espree": "^3.5.1",
+    "js-yaml": "^3.10.0",
+    "shelljs": "^0.7.8",
+    "xtend": "^4.0.1"
+  },
+  "devDependencies": {
+    "semistandard": "^11.0.0"
+  },
+  "scripts": {
+    "exec": "bin/cli.js run examples/shelljs-ex.js",
+    "semi": "semistandard",
+    "test": "semistandard && bin/cli.js example"
+  }
+}
