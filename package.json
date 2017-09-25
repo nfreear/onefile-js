@@ -4,8 +4,9 @@
   "version": "1.0.0-beta",
   "license": "MIT",
   "bin": {
-    "onefile": "bin/cli.js"
+    "onefile": "bin/onefile.js"
   },
+  "preferGlobal": true,
   "author": "Nick Freear {@nfreear}",
   "repository": "https://github.com/nfreear/onefile-js",
   "dependencies": {
@@ -18,11 +19,11 @@
     "semistandard": "^11.0.0"
   },
   "scripts": {
-    "onefile": "bin/cli.js run examples/shelljs-ex.js",
+    "onefile": "bin/onefile.js run examples/shelljs-ex.js",
     "semi": "semistandard",
-    "test": "semistandard && bin/cli.js example"
+    "test": "semistandard && bin/onefile.js example"
   },
-  "keywords": [ "melody-php", "npm-package", "es6" ],
+  "keywords": [ "melody-php", "npm-package", "es6", "espree" ],
   "x-melody-url": "http://melody.sensiolabs.org/",
   "x-copyright": "© Nick Freear, 20-Sep-2017."
 }

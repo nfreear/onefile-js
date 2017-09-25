@@ -12,7 +12,7 @@ Inspired by [php-melody][] ~ 'One-file composer scripts'."
 
 The dependencies that you'd normally define in a separate `package.json` file,
 are placed at the top of the Javascript in a multi-line [`ES6 template string`][es6],
-in [YAML format][yaml]:
+in [YAML format][yaml], using the constant name `_PKG_`:
 
 ```js
 const _PKG_ = `
@@ -21,8 +21,8 @@ dependencies:
   package-B: ^2.3
 `;
 
+
 // Rest of the Javascript ...
-// ...
 ```
 
 Here is a trivial 'hello world' example, with a single dependency, [shelljs][]:
@@ -40,13 +40,14 @@ shell.echo('Hello world!');
 ```
 
 The above file can be executed like so
-(internally, `npm install` & `node script.js` are run):
+(`npm install` & `node script.js` are run internally):
 
 ```
+npm install -g
 onefile run examples/shelljs-ex.js
 ```
 
-Note, it is a valid Javascript file:
+Note, the file is valid Javascript (`ES6`):
 
 ```
 node -c examples/shelljs-ex.js
@@ -55,7 +56,7 @@ node -c examples/shelljs-ex.js
 ## Install ... test
 
 ```sh
-npm install -g
+npm install
 npm test
 ```
 
