@@ -4,9 +4,8 @@
   https://npmjs.com/package/shelljs
 */
 
-const DIR = '~/.melodylike/'; // Was: '~/.nellie/'
+const DIR = '~/.onefile-js/'; // Was: '~/.melodylike/';
 const sh = require('shelljs');
-// const fs = require('fs');
 
 var pkgfile;
 var pkgdir;
@@ -29,7 +28,7 @@ module.exports = {
     const filename = pkgdir + '/package.json';
     console.log('write:', filename);
 
-    // return fs.writeFileSync(filename, JSON.stringify(pkgdata));
+    // Was: return fs.writeFileSync(filename, JSON.stringify(pkgdata));
     return sh.echo(JSON.stringify(pkgdata)).to(filename);
   },
 

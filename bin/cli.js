@@ -1,21 +1,14 @@
 #!/usr/bin/env node
 
 /*!
-  CLI.
+  CLI. Onefile commandline tool.
 
   Usage:
 
-      $ onefile run my/script.js
+      $ onefile run path/to/script.js
 
   © Nick Freear, 20-Sep-2017.
-
-  4 [ '/Users/Nick/.nvm/versions/node/v8.1.3/bin/node',
-  '/Users/Nick/workspace/nellie-melody/bin/nellie.js',
-  'run',
-  'examples/shelljs-es6.js' ]
 */
-
-// console.log(process.argv.length, process.argv);
 
 const examplejs = 'examples/shelljs-ex.js';
 const extractor = require('./../src/extract-config');

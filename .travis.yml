@@ -13,6 +13,6 @@ script:
   - npm test
 
 after_script:
-  - ls -alh ~/.nellie/
+  - ls -alh ~/.onefile-js/
 
 # End.
