@@ -1,6 +1,6 @@
 {
   "name": "onefile",
-  "description": "One-file npm-package Javascripts. Inspired by php-melody ~ 'One-file composer scripts'.",
+  "description": "One-file npm-package Javascripts. Inspired by php-melody — 'One-file composer scripts'.",
   "version": "1.0.0-beta",
   "license": "MIT",
   "bin": {
@@ -23,7 +23,7 @@
     "semi": "semistandard",
     "test": "semistandard && bin/onefile.js example"
   },
-  "keywords": [ "melody-php", "npm-package", "es6", "espree" ],
+  "keywords": [ "melody-php", "npm-package", "es6", "espree", "cli" ],
   "x-melody-url": "http://melody.sensiolabs.org/",
   "x-copyright": "© Nick Freear, 20-Sep-2017."
 }

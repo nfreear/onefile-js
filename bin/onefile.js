@@ -1,35 +1,36 @@
 #!/usr/bin/env node
 
 /*!
-  CLI. Onefile commandline tool.
+  onefile commandline script (CLI).
 
   Usage:
 
       $ onefile run path/to/script.js
 
-  © Nick Freear, 20-Sep-2017.
+  © Nick Freear, 20-Sep-2017 | License: MIT.
 */
 
-const examplejs = 'examples/shelljs-ex.js';
 const extractor = require('./../src/extract-config');
 const defaults = require('./../src/package-defaults.json');
 const shell = require('./../src/shell-commands');
 const extend = require('xtend');
+const EXAMPLE_JS = 'examples/shelljs-ex.js';
+const ARGV = process.argv;
 
 var filename;
-if (process.argv.length === 4) {
-  filename = process.argv[ 3 ];
-} else if (process.argv.length === 3 && process.argv[ 2 ] === 'example') {
-  filename = examplejs;
+if (ARGV.length === 4) {
+  filename = ARGV[ 3 ];
+} else if (ARGV.length === 3 && ARGV[ 2 ] === 'example') {
+  filename = EXAMPLE_JS;
 } else {
-  console.warn('Usage:\n\n  onefile run path/to/script.js');
+  shell.log('Usage:\n\n  onefile run path/to/script.js');
   process.exit(1);
 }
 
-const cfg = extractor(filename);
-const pkgdata = extend(defaults, cfg.config, { 'x-time': new Date().toISOString() });
+const CFG = extractor(filename);
+const pkgdata = extend(defaults, CFG.config, { 'x-time': new Date().toISOString() });
 
-console.log(pkgdata);
+shell.log(pkgdata);
 
 shell.init(filename);
 shell.createPkgDir();

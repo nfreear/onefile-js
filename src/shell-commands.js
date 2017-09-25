@@ -1,16 +1,19 @@
 /*!
-  © Nick Freear, 23-Sep-2017.
+  © Nick Freear, 23-Sep-2017 | License: MIT.
 
   https://npmjs.com/package/shelljs
 */
 
 const DIR = '~/.onefile-js/'; // Was: '~/.melodylike/';
 const sh = require('shelljs');
+const log = console.warn;
 
 var pkgfile;
 var pkgdir;
 
 module.exports = {
+
+  log: log,
 
   init: function (jsfile) {
     pkgfile = jsfile;
@@ -20,13 +23,13 @@ module.exports = {
   createPkgDir: function () {
     var res = sh.mkdir('-p', pkgdir);
 
-    console.log('mkdir:', pkgdir, res.code);
+    log('> mkdir:', pkgdir, res.code);
     return res;
   },
 
   writePkg: function (pkgdata) {
     const filename = pkgdir + '/package.json';
-    console.log('write:', filename);
+    log('> write:', filename);
 
     // Was: return fs.writeFileSync(filename, JSON.stringify(pkgdata));
     return sh.echo(JSON.stringify(pkgdata)).to(filename);
@@ -45,7 +48,7 @@ module.exports = {
 
   nodeRun: function () {
     const cmd = 'NODE_PATH=' + pkgdir + '/node_modules; node ' + pkgfile;
-    console.log('cmd:', cmd);
+    log('> cmd:', cmd);
 
     return sh.exec(cmd);
   }

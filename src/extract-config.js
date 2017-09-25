@@ -1,6 +1,6 @@
 /*!
 
-  © Nick Freear, 21-Sep-2017.
+  © Nick Freear, 21-Sep-2017 | License: MIT.
 */
 
 const PKG_NAME = '_PKG_';

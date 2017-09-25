@@ -8,7 +8,7 @@
 
 One-file npm-package Javascripts.
 
-Inspired by [php-melody][] ~ 'One-file composer scripts'."
+_Inspired by [php-melody][] — 'One-file composer scripts'."_
 
 The dependencies that you'd normally define in a separate `package.json` file,
 are placed at the top of the Javascript in a multi-line [`ES6 template string`][es6],
@@ -42,14 +42,15 @@ shell.echo('Hello world!');
 The above file can be executed like so
 (`npm install` & `node script.js` are run internally):
 
-```
+```sh
 npm install -g
+
 onefile run examples/shelljs-ex.js
 ```
 
 Note, the file is valid Javascript (`ES6`):
 
-```
+```sh
 node -c examples/shelljs-ex.js
 ```
 
