@@ -4,7 +4,8 @@
   https://npmjs.com/package/shelljs
 */
 
-const DIR = '~/.otu-js/'; // Was: '~/.onefile-js/';
+const PKG = require('./../package.json');
+const DIR = PKG[ 'x-otu-directory' ]; // Was: '~/.onefile-js/';
 const sh = require('shelljs');
 const log = console.warn;
 
@@ -15,9 +16,19 @@ module.exports = {
 
   log: log,
 
+  baseDirectory: function () {
+    return DIR;
+  },
+
+  pkgDirectory: function () {
+    return pkgdir;
+  },
+
   init: function (jsfile) {
     pkgfile = jsfile;
-    pkgdir = DIR + pkgfile.replace(/^\//, '');
+    pkgdir = DIR + pkgfile.replace(/^\//, ''); // path.join(DIR, pkgfile);
+
+    return pkgdir;
   },
 
   createPkgDir: function () {

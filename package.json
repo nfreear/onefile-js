@@ -2,14 +2,16 @@
   "name": "otu",
   "x-name": "onefile",
   "description": "One-file npm-package Javascripts. Inspired by php-melody — 'One-file composer scripts'.",
-  "version": "1.0.0-beta",
+  "version": "1.2.0-beta",
   "license": "MIT",
+  "main": "index",
   "bin": {
     "otu": "bin/otu.js"
   },
+  "x-otu-directory": "~/.otu-js/",
   "preferGlobal": true,
   "author": "Nick Freear {@nfreear}",
-  "repository": "https://github.com/nfreear/onefile-js",
+  "repository": "https://github.com/nfreear/onefile-js.git",
   "dependencies": {
     "espree": "^3.5.1",
     "js-yaml": "^3.10.0",

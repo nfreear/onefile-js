@@ -9,6 +9,9 @@ dependencies:
 node-opts:
   - "opt-1"
   - "opt-2"
+my-test:
+  urls:
+    - https://example.org
 `;
 
 /*!
@@ -19,7 +22,10 @@ node-opts:
   © Nick Freear, 19-sep-2017.
 */
 
+const OTU = require('../index');
 const shell = require('shelljs');
+
+// const scriptName = __filename.replace(process.cwd(), ''); // require('path').basename(__filename);
 
 var hereDoc = `
 This
@@ -32,8 +38,16 @@ String
 
 // hereDoc === 'This\nis\na\nMultiply\nLine\nString';
 
-// console.log( hereDoc );
+console.log(process.argv);
+console.log(OTU.getFilename(__filename));
+
 shell.echo(hereDoc);
 shell.echo('Hello world!');
+
+OTU.init(OTU.getFilename());
+
+shell.echo(OTU.getVersion());
+shell.echo(OTU.pkgDirectory());
+shell.echo(OTU.getPackage(__filename)[ 'my-test' ].urls);
 
 // End.

@@ -83,7 +83,7 @@ Twitter: [@nfreear][].
 
 [@nfreear]: https://twitter.com/nfreear "@nfreear on Twitter"
 [gh]: https://github.com/nfreear/onefile-js
-[MIT]: https://nfreear.mit-license.org/2017#!-onefile-js "MIT License | © Nick Freear, 2017-09-20."
+[MIT]: https://nfreear.mit-license.org/2017-2018#!-otu-js "MIT License | © Nick Freear, 2017-09-20."
 [travis]: https://travis-ci.org/nfreear/onefile-js
 [travis-icon]: https://api.travis-ci.org/nfreear/onefile-js.svg
     "Build status – Travis-CI (NPM/eslint)"
